@@ -8,7 +8,7 @@ All of the source code is located within the "src" folder. A collection of simul
 
 # Quick Start
 
-To run the software on the simulated data set provided, enter the following inputs. The number of iterations, burnin, thinning variable, and background estimation method can be changed if desired, however the other values must stay the same. 
+To run the software on the simulated data set provided, enter the following inputs. The number of iterations, burnin, thinning variable, number of instruments you are considering (no more than three for this example), instrument numbers (enter each number with a single space between them if you don't wish to consider all three instruments), and background estimation method can be changed if desired, however the other values must stay the same. 
 
 ```
 will-scarlett:src Laura$ python3 atmospheric-tomography.py sim-data
