@@ -2,7 +2,7 @@
 
 The Atmospheric Tomography software is a command line tool written in R and Python to estimate the emission rate of a point source from concentration data. It implements a Bayesian inversion method.
 
-A user manual is provided for the software, titled "AT_2018_user_manual".
+A user manual is provided for the software, titled "AT_2018_user_manual", and contains detailed instructions on installing all of the components required for the software to run.
 
 All of the source code is located within the "src" folder. A collection of simulated data has also been provided, to allow the user to test the software. This file is also located within the "src" folder, and the code needed to run the software on this data set is given in the "Quick Start" section below, as well as in Appendix A of the software user manual. 
 
