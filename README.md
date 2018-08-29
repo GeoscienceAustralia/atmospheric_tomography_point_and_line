@@ -10,7 +10,7 @@ All of the source code is located within the "src" folder. A collection of simul
 
 To run the software on the simulated data set provided, enter the following inputs. The number of iterations, burnin, thinning variable, and background estimation method can be changed if desired, however the other values must stay the same. 
 
-```python
+```
 will-scarlett:src Laura$ python3 atmospheric-tomography.py sim-data
 	
 	Enter the number of iterations for the MCMC simulation: 100000
