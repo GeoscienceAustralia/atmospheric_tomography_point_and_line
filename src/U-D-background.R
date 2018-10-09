@@ -20,8 +20,8 @@ U.D.Background <- function(inv_data){
             inst <- inv_data$inst_no[i]
             # Set instrument number of the observation under consideration
             k <- 1
-            # See if there are 5 or more upwind observations for the same instrument number as the observation under consideration within a 2-hour interval centred on the observation under consideration. If 5 or more observations found, take the mean of the concentrations corresponding to these values. If not, do nothing.
-            while (k <= 1 & is.na(inv_data$background[i]) == TRUE){
+            # See if there are 5 or more upwind observations for the same instrument number as the observation under consideration within a 2-hour interval centred on the observation under consideration. If not, extend the interval to 4 hours, then 6, and so on, stopping at 10 hours. If 5 or more observations found, take the mean of the concentrations corresponding to these values. If not, do nothing.
+            while (k <= 5 & is.na(inv_data$background[i]) == TRUE){
                 ATdata_sub <- filter(inv_data, Time[i] - hours(k) <= Time)
                 ATdata_sub <- filter(ATdata_sub, Time <= inv_data$Time[i] + hours(k))
                 ATdata_sub <- filter(ATdata_sub, Concentration != 0)
